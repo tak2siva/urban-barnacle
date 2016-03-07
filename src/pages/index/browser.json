@@ -1,5 +1,6 @@
 {
     "dependencies": [
-        "require: ../../components/number-spinner"
+        "require: ../../components/number-spinner",
+        "require: ../../components/item-cards"
     ]
 }

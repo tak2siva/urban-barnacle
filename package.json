@@ -16,6 +16,13 @@
     "lasso-marko": "^2.0.4",
     "marko": "^2.7.9",
     "marko-widgets": "^5.0.0-beta.2",
-    "serve-static": "^1.10.0"
+    "serve-static": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "underscore": "^1.8.3",
+    "lasso-autoprefixer": "^1.0.3",
+    "less": "^2.5.1",
+    "lasso-less": "^2.1.2",
+    "jquery": "2.1.4"
   }
 }

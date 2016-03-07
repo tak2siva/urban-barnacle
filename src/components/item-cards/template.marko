@@ -1,0 +1,11 @@
+<div class="app-tabs ${data.containerClassName}" w-bind>
+    <h3>Items:</h3>
+    <ul class="tab-nav">
+        <li for="item in data.items">
+        <div class="${data.className}">
+            <img class="item-image" src="${item.imageUrl}">
+            <p class="item-desc">"${item.title.text}"</p>
+        </div>
+        </li>
+    </ul>
+</div>

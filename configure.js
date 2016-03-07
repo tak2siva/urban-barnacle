@@ -20,6 +20,7 @@ var isProduction = (process.env.NODE_ENV === 'production');
 
 lasso.configure({
     plugins: [
+        'lasso-less', // Allow less file to render
         'lasso-marko' // Auto compile Marko template files
     ],
 
@@ -36,5 +37,12 @@ lasso.configure({
     minify: isProduction,
 
     // Only fingerprint JS and CSS files in production builds
-    fingerprintsEnabled: isProduction
+    fingerprintsEnabled: isProduction,
+
+    bundles: [{
+        name: 'jquery',
+        dependencies: [
+            'require: jquery' // Put only the jquery module in this bundle
+        ]
+    }]
 });
